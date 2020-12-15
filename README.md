@@ -9,8 +9,6 @@ Site Oficial:
 * https://git-scm.com
 
 
-
-
 ### Referências de Consulta
 
 * https://devhints.io/git-log
