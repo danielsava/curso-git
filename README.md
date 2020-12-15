@@ -165,6 +165,7 @@ mostrado abaixo:
     
 O caminho deste repositório, criado acima, pode ser configurado em outras repositórios como repositório remoto. 
 
+<br/>
 
 ### Configurando Repositório Remoto
 
@@ -177,8 +178,6 @@ Ou
     git remote -v  (verbose)
 
 Caso a saída dos comandos acima seja vazia, significa que o repositório atual nãop possui nenhum repositório remoto configurado.
-
-<br>
 
 #
 Para adicionar um repositório remoto, basta executar o comando abaixo (utilizado como exemplo):
@@ -200,6 +199,7 @@ Exemplo:
 
     git remote rename local origin
 
+<br/>
 
 ### `Clonando` Repositórios Remotos
 
@@ -210,7 +210,8 @@ Utilizando o repositório remoto criado no exemplo acima, ele será clonado no d
 Ou caso deseje clonar para o diretório atual:
     
     git clone /C/Users/ALURA/Documents/git-e-github/servidor/
-    
+ 
+<br/>  
     
 ### `Empurrando` alterações para Repositórios Remotos
 
@@ -218,7 +219,8 @@ Para enviar os commits locais para um repositório remoto, é utilizado o comand
 onde configuramos um repositório remoto com nome de `local`, será utilziado a seguinte sintaxe no comando `push`:
 
     git push local master
-    
+
+<br/>    
     
 ### Buscando alterações do Repositório Remoto
 
