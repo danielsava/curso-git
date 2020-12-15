@@ -8,6 +8,7 @@ Site Oficial:
 
 * https://git-scm.com
 
+<br/>
 
 ### Referências de Consulta
 
