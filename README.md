@@ -4,7 +4,7 @@
 
 ### Instalação do Git
 
-Site Oficial: 
+Siga as instruções do site oficial: 
 
 * https://git-scm.com
 
