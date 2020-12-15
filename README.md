@@ -220,6 +220,21 @@ onde configuramos um repositório remoto com nome de `local`, será utilziado a 
 
     git push local master
 
+Ou, caso deseje setar o repositório `local` como `default`, executar o comando push com a opção `- u`:
+
+    git push -u local master
+    
+Desta forma, toda vez que estiver na `branch master` basta executar `git push` que os commits serão enviados para o repositório
+remoto `local`.
+
+Alguns desenvolvedores, por questões de controle, preferem executar o comando completo:
+
+    git push <alias_sever_remote> <nome_branch>
+    
+O mesmo se aplica ao comando `pull`. 
+
+    git push <alias_sever_remote> <nome_branch>
+
 <br/>    
     
 ### Buscando alterações do Repositório Remoto
