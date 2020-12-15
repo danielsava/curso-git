@@ -1,12 +1,14 @@
 # Curso Alura Git
 
+<br/>
+
 ### Instalação do Git
 
 Site Oficial: 
 
 * https://git-scm.com
 
-<br/>
+
 
 
 ### Referências de Consulta
@@ -96,7 +98,8 @@ Submetendo arquivos versionados:
 
     git commit -m "Mensagem ..."
     
-    
+<br/>
+ 
 ### Logs 
  
 Segue abaixo exemplos do comando log para visualizar o histórico e as informações dos committers, e alterações que foram realizadas nos arquivos.
