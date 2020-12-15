@@ -1,4 +1,4 @@
-# Curso Alura Git
+# Git
 
 <br/>
 
