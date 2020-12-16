@@ -359,7 +359,7 @@ Para <b> recuperar </b> as modificações salvas no stash, podem ser utilizados 
 
     git stash apply <numr_identificacao_stash>
 
-O número de identificação da stash pode ser obtida através do `git stash list`. O `apply` <b> não remove <\b> a stash 
+O número de identificação da stash pode ser obtida através do `git stash list`. O `apply` <b> não remove </b> a stash 
 recuperada. Para remover:
 
     git stash drop <numr_identificacao_stash>     
@@ -367,7 +367,7 @@ recuperada. Para remover:
 
 #### Stash Pop    
 
-O comando `stash pop` recupera a <b> ÚLTIMA <\b> alteração adicionada e a remove do `stash`. Portanto, bastando para isso:
+O comando `stash pop` recupera a <b> ÚLTIMA </b> alteração adicionada e a remove do `stash`. Portanto, bastando para isso:
 
     git stash pop
     
