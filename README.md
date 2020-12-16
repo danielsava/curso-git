@@ -400,6 +400,7 @@ crie uma nova branch:
     
 Desta forma, a partir deste momento os commit feitos estarão nesta nova branch.
 
+<br/>
 
 ### Visualizando diferenças entre commits: `diff`
 
@@ -423,7 +424,7 @@ Para visualizar o resultado das alterações `not staged` (vermelho), basta exec
     git dif <branch_1>..<branch_2>
 
 
-<br/>    
+<br/>
 
 ### Gerando Releases (Tags)   
 
