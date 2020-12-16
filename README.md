@@ -338,7 +338,7 @@ Exemplo:
 
     git revert 974498e8fb0920b4d2252c2a3448ea1c98be283e
     
-O `revert` irá gerar um <b>novo commit<b/> desfazendo as alterações do commit informado.
+O `revert` irá gerar um <b> novo commit </b> desfazendo as alterações do commit informado.
    
 
     
