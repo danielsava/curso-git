@@ -261,8 +261,7 @@ Ou
 #
 Para criar uma nova branch:
 
-    git branch <nome_branch>
- 
+    git branch <nome_branch> 
    
     
 #    
@@ -284,6 +283,68 @@ Para remover uma branch:
 Para enviar as alterações da branch para o repositório remoto:
 
     git push origin funcionalidade_x
+
+<br/>
+
+### Merge Branch
+
+O comando `merge` irá atualizar a branch atual com as alterações de uma outra branch. Portanto, na branch que deseja
+atualizar, executar o `merge` informando o nome da branch que deseja bsucar as alterações.
+
+    git merge funcionalidade_x
+    
+Exemplo: a seguinte de comando abaixo irá atualizar a branch `master` com as modificações feitas na branch `titulo`
+
+    git checkout master
+    git merge titulo
+
+
+### Merge vs Rebase
+
+O `merge` junta todos commits da branch de origem e unifica-os em um único commit na branch de destino, no qual 
+podemos chamar de `merge commit`. O `rebase` busca todos os commits da branch de destino e aplica na branch de destino.
+A sintaxe do comando `rebase` é a mesma do `merge`. 
+
+    git rebase <nome_branch_origem>
+    
+<br/>
+
+ 
+### Desfazendo alterações
+
+#### Checkout
+
+Caso queira desfazer alterações `not staged` (cor vermelha no `git status`) de um determinado arquivo:
+
+    git checkout -- <nome_arquivo>
+
+#### Reset    
+
+Para desfazer alterações `staged` (cor verde no `git status`), que estão prontas pra serem comitadas, de um determinado
+arquivo utilize o `reset`. O reset altera o status do arquivo de `staged` (verde) para `not staged` (vermelho), 
+por isso é necessário executar, posteriormente, o `checkout` para concluir que as alterações sejam desfeitas:  
+
+    git reset HEAD <nome_arquivo>
+    git checkout -- <nome_arquivo>
+
+#### Revert
+
+O rever altera as modificações de um determinado commit. Para isso, basta informar a Hash de identificaão do commit que
+será desfeito:
+
+    git revert <hash_commit>
+
+Exemplo:
+
+    git revert 974498e8fb0920b4d2252c2a3448ea1c98be283e
+    
+O `revert` irá gerar um <b>novo commit<b/> desfazendo as alterações do commit informado.
+   
+
+    
+ 
+
+
 
 
     
