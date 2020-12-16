@@ -355,6 +355,8 @@ Dessa forma, todas as alterações `not staged` foram `guardadas` em um lugar te
     
 Para <b> recuperar </b> as modificações salvas no stash, podem ser utilizados os seguintes comandos:
 
+<br/>
+
 #### Stash Apply
 
     git stash apply <numr_identificacao_stash>
@@ -364,6 +366,7 @@ recuperada. Para remover:
 
     git stash drop <numr_identificacao_stash>     
 
+<br/>
 
 #### Stash Pop    
 
@@ -371,6 +374,6 @@ O comando `stash pop` recupera a <b> ÚLTIMA </b> alteração adicionada e a rem
 
     git stash pop
     
-O comando irá buscar a última alteração inserida no stash, e faz um merge com os arquivos que foram modificados. 
+O comando irá buscar a última alteração inserida no stash, e realizar um merge com os arquivos que foram modificados. 
 
     
