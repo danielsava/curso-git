@@ -246,6 +246,7 @@ Com repositório remoto já configurado com o nome `local`, o comando abaixa bus
     
 Poderia ser qualquer servidor remoto configurado ou qualquer branch existente no repositório remoto `local`.
 
+<br/>
 
 ### Branch
 
@@ -256,8 +257,6 @@ Para listar as branchs que o repositório possui:
 Ou 
 
     git branch -l (listar)
-
-<br/>
     
 #
 Para criar uma nova branch:
