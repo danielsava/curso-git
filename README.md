@@ -15,6 +15,7 @@ Siga as instruções do site oficial:
 * https://devhints.io/git-log
 * https://devhints.io/git-log-format
 * https://devhints.io/git-branch
+* https://git-school.github.io/visualizing-git
 
 <br/>
 
@@ -239,8 +240,51 @@ O mesmo se aplica ao comando `pull`.
     
 ### Buscando alterações do Repositório Remoto
 
-Com repositório remotos já configurado, conforme feitos nos exemplos, com o nome `local`, vamos buscar as alterações da branch `master`.
+Com repositório remoto já configurado com o nome `local`, o comando abaixa busca as alterações da branch `master`.
 
     git pull local master
     
 Poderia ser qualquer servidor remoto configurado ou qualquer branch existente no repositório remoto `local`.
+
+
+### Branch
+
+Para listar as branchs que o repositório possui:
+
+    git branch
+    
+Ou 
+
+    git branch -l (listar)
+
+<br/>
+    
+#
+Para criar uma nova branch:
+
+    git branch <nome_branch>
+ 
+   
+    
+#    
+Para mudar para a nova branch criada, utilize o comando `checkout`:
+
+    git checkout <nome_branch>
+
+
+O comando `checkout` com a flag `-b` cria uma nova branch e muda para branch criada:
+
+    git checkout -b funcionalidade_x
+    
+#
+Para remover uma branch:
+
+    git branch -d funcionalidade_x
+    
+#
+Para enviar as alterações da branch para o repositório remoto:
+
+    git push origin funcionalidade_x
+
+
+    
