@@ -376,4 +376,80 @@ O comando `stash pop` recupera a <b> ÚLTIMA </b> alteração adicionada e a rem
     
 O comando irá buscar a última alteração inserida no stash, e realizar um merge com os arquivos que foram modificados. 
 
+<br/>    
+
+### Navegando entre Commits
+
+O comando `checkout` altera o <b> estado </b> do repositório no git, seja ela navegando entre `branch` ou desfazendo 
+alterações. Por esse motivo, através do comando `checkout` possível navegar entre os `commits` do repositório. 
+Por exemplo, caso deseje <b> navegar </b> até um commit específico, bastar informar o hash de identificação do commit, 
+de uma forma muito parecida que é feito para navegar entre `branchs`: 
+
+    git checkout b1e65bb
     
+<b> IMPORTANTE: </b>  Ao executar o comando acima, o projeto estará no estado em que se encontra o commit informado. 
+Não é uma branch, e sim uma <b> fotografia </b> do repositório no momento do commit. Portanto todos os commits feito, 
+neste caso, serão descartados.
+
+#
+Caso deseje <b> salvar os commits</b> feitos, será necessário criar uma nova branch. Portantom, dentro do commit informado no checkout,
+crie uma nova branch:
+    
+    git checkout <hash_commit>
+    git checkout -b <nome_nova_branch>
+    
+Desta forma, a partir deste momento os commit feitos estarão nesta nova branch.
+
+
+### Visualizando diferenças entre commits: `diff`
+
+O comando `git log -p` mostra as alterações nos arquivos para cada commit feito. Agora, para visualizar as alterações entre
+dois commits basta executar:
+
+    git diff <hash_commit_inicio>..<hash_commit_fim>
+    
+Do comando acima, leia-se: "Me mostre o resultado final das alterações feitas entre estes dois commits".
+
+#
+Para visualizar o resultado das alterações `not staged` (vermelho), basta executar:
+
+    git diff
+    
+
+
+#
+É possível visualizar diferença entre duas branchs:
+
+    git dif <branch_1>..<branch_2>
+
+
+<br/>    
+
+### Gerando Releases (Tags)   
+
+#
+Para criar tags:
+
+    git tag -a <nome_tag> 
+
+_
+
+    git tag -a v0.1.0 -m "Tag xurupita motherfoca"
+    
+#
+Para listar as tags do repositório:
+
+    git tag
+    
+#
+Executando push das tags para repositório remoto:
+
+    git push <alias_repo_remoto> <nome_tag>
+    
+_
+
+    git push local v0.1.0
+    
+_
+  
+    git push origin v0.1.0
