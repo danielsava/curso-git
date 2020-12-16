@@ -309,7 +309,6 @@ A sintaxe do comando `rebase` é a mesma do `merge`.
     
 <br/>
 
- 
 ### Desfazendo alterações
 
 #### Checkout
@@ -340,11 +339,38 @@ Exemplo:
     
 O `revert` irá gerar um <b> novo commit </b> desfazendo as alterações do commit informado.
    
-
     
+<br/>
  
+### Guardando alterações temporariamente (stash)
+
+As alterações `not staged` (vermelhas) podem ser separadas, guardadas, em um local temporário para que possam posteriormente
+serem recuperadas. Este é o conceito de `stash` no GIT. Para tanto, a utilização do comando é bastante simples.
+
+    git stash
+    
+Dessa forma, todas as alterações `not staged` foram `guardadas` em um lugar temporário. Para listar o que está salvo no `stash`:
+
+    git stash list
+    
+Para <b> recuperar </b> as modificações salvas no stash, podem ser utilizados os seguintes comandos:
+
+#### Stash Apply
+
+    git stash apply <numr_identificacao_stash>
+
+O número de identificação da stash pode ser obtida através do `git stash list`. O `apply` <b> não remove <\b> a stash 
+recuperada. Para remover:
+
+    git stash drop <numr_identificacao_stash>     
 
 
+#### Stash Pop    
 
+O comando `stash pop` recupera a <b> ÚLTIMA <\b> alteração adicionada e a remove do `stash`. Portanto, bastando para isso:
+
+    git stash pop
+    
+O comando irá buscar a última alteração inserida no stash, e faz um merge com os arquivos que foram modificados. 
 
     
