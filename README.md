@@ -19,6 +19,21 @@ Siga as instruções do site oficial:
 
 <br/>
 
+### Softwares Clientes
+
+*  
+
+<br/>
+
+### Servidores Git
+
+* GitHub: https://github.com/
+* BitBucket: https://bitbucket.org/
+* GitLab: https://gitlab.com
+
+
+<br/>
+
 ### Comandos Básicos
 
 ##
@@ -454,3 +469,33 @@ _
 _
   
     git push origin v0.1.0
+    
+    
+<br/>
+
+
+## Demais assuntos
+ 
+### Unificando Commits (Útil em Pull Requests)
+
+O comando `rebase` pode ser utilizado para unificar vários commits em apenas 1 (um) commit. Essa funcionalidade é muito
+utilizada em `pull requests` para facilitar a revisão do código no merge pelo responsável do projeto, pois o merge conterá
+apenas 1 commit com todas as alterações realizadas.
+
+#
+Para unificar os 3 últimos commits:
+    
+    git rebase -i HEAD~3
+    
+#
+Para unificar <b>A PARTIR</b> de um determninado commit:
+
+    git rebase -i <hash_commit>
+    
+obs: <b> O commit informado não será incluído </b>.
+
+
+    
+
+
+    
