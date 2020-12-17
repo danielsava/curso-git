@@ -476,7 +476,7 @@ _
 <br/>
 
 
-## Demais assuntos
+## Funcionalidades Avançadas
  
 ### Unificando Commits
 
@@ -496,8 +496,33 @@ Para unificar <b>A PARTIR</b> de um determninado commit:
     
 obs: <b> O commit informado não será incluído </b>.
 
+<br/>
 
+### Buscando as alterações de um Commit: `cherry-pick`
+
+Caso seja necessário, é possível buscar as alterações de um commit em específico que está 
+em outra branch. Para tanto, na branch que será atualizada com o commit desejado, bastar executar:
+
+    git cherry-pick <hash_commit> 
+
+Funcionalidade esta muito útil quando um bug que afeta a branch atual já foi solucionada em outra branch. O interessante 
+é que no caso de um futuro `merge` ou `rebase` entre as duas branchs, as alterações não irão gerar conflito com commit 
+que foi buscado pelo `cheryy-pick`.
+
+<br/>
+
+### Visualizando os responsáveis: `blame`
+
+Através do comando `blame` é possivel visualizar, em um determinado arquivo, os responsáveis pelas alterações feitas:
+
+    git blame <nome_arquivo>
     
+<br/>
+    
+### Visualizando as alterações de Commit: `show`
 
+Para visualizar as alterações de um determinado commit:
 
+    git show <hash_commit>
+    
     
