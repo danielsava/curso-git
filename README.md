@@ -19,9 +19,11 @@ Siga as instruções do site oficial:
 
 <br/>
 
-### Softwares Clientes
+### Ferramentas Cliente
 
-*  
+* GitHub Desktop
+* GitKraken
+* Git Cola
 
 <br/>
 
