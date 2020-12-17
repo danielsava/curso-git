@@ -296,6 +296,12 @@ Para remover uma branch:
 
     git branch -d funcionalidade_x
     
+_
+
+    git branch -D <nome_branch>
+    
+Esta útlima opção caso a branch que será deletada esteja à <b> frente do HEAD </b>.
+    
 #
 Para enviar as alterações da branch para o repositório remoto:
 
