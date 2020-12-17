@@ -478,7 +478,7 @@ _
 
 ## Demais assuntos
  
-### Unificando Commits (Útil em Pull Requests)
+### Unificando Commits
 
 O comando `rebase` pode ser utilizado para unificar vários commits em apenas 1 (um) commit. Essa funcionalidade é muito
 utilizada em `pull requests` para facilitar a revisão do código no merge pelo responsável do projeto, pois o merge conterá
