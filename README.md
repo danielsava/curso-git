@@ -526,3 +526,17 @@ Para visualizar as alterações de um determinado commit:
     git show <hash_commit>
     
     
+<br/>
+    
+### Estratégias de Branchs
+
+Uma das estratégias muito utilizada e recomendada:
+
+    git-flow
+    
+Dificilmente uma média ou pequena empresa irá implementar o `git-flow` à risca. Essa estratégia pdoe, e deve, ser modificada
+e adaptada de acordo com a realidade de cada organização.
+
+
+    
+    
