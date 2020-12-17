@@ -528,7 +528,7 @@ Para visualizar as alterações de um determinado commit:
     
 <br/>
     
-### Estratégias de Branchs
+### Estratégias de organizção de Branchs
 
 Uma das estratégias muito utilizada e recomendada:
 
