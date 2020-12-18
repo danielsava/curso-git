@@ -538,5 +538,32 @@ Dificilmente uma média ou pequena empresa irá implementar o `git-flow` à risc
 e adaptada de acordo com a realidade de cada organização.
 
 
+### Estratégias de organizção de Branchs: `Hooks`    
     
+O GIT permite executar códigos, em Shell Scripts, quando um determinado evento acontece. Estes scripts, em Shell Scripts,
+podem ser criados e colocados dentro do diretório `.git/hooks/` onde o nome do arquivo representa o evento.
+
+#
+Um exmeplo, pdoeria ser:
     
+* Nome do script: <b> pre-commit </b>
+
+* Conteúdo:
+
+
+    #!/bin/sh
+    echo "Você está prestes a commitar :-)" 
+ 
+ 
+O resultado é que a mensagem do script acima será mostrada toda vez que for executado um commit.
+
+#
+Outro exmeplo: neste caso, este script poderia ser inserido em algum repositorio remoto para realizar um deploy da aplicação.
+    
+* Nome do script: <b> post-receive </b>
+
+* Conteúdo:
+
+
+    #!/bin/sh
+    cp index.html C:\servidor\web\diretorio\deploy 
